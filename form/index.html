@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in the html </title>
+
+    <!-- internal or crititcal css styling -->
+    <style>
+        /* class selector  */
+       .input_container_box{
+            margin-bottom: 10px;
+       }
+       .input_container_box >  label {
+        color:red;
+       }
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+    1. form use case of the form 
+    2. input type 
+        1. text
+        2. password
+        3. email
+        4. number
+        5. date
+            6. checkbox
+            7. radio
+            8. submit
+            9. reset
+            10. button
+
+    3. fieldset and legend 
+    
+
+    
+    
+    -->
+
+    
+    <!-- inline : content jitna hai utna hi space ko cover kerege   -->
+     <!-- block element : take full width  -->
+
+    <form action="./about.html" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <!-- name input -->
+            <div class="input_container_box">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- email input -->
+            <div class="input_container_box">
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+        </fieldset>
+        
+    </form>
+</body>
+</html>
